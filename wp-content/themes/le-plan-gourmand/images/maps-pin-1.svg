@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="24.114" viewBox="0 0 24.5 24.114">
+  <g id="Maps-Navigation_Maps_maps-pin-1" data-name="Maps-Navigation / Maps / maps-pin-1" transform="translate(-224.75 -255.244)">
+    <g id="Group_13" data-name="Group 13">
+      <g id="maps-pin-1">
+        <path id="Shape_39" data-name="Shape 39" d="M232.5,260.9v15.885" fill="none" stroke="#f7b64f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Shape_40" data-name="Shape 40" d="M239.5,265.9v-9.886" fill="none" stroke="#f7b64f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Shape_41" data-name="Shape 41" d="M238.5,272.618l-5.709,4.078a.5.5,0,0,1-.582,0l-6.5-4.643a.5.5,0,0,1-.209-.407V256.875a.5.5,0,0,1,.791-.406L232.5,260.9l6.709-4.791a.5.5,0,0,1,.582,0l6.5,4.643a.5.5,0,0,1,.209.407v4.743" fill="none" stroke="#f7b64f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Shape_42" data-name="Shape 42" d="M244.5,267.9a4,4,0,0,1,4,4c0,1.781-2.6,5.24-3.608,6.514a.5.5,0,0,1-.784,0c-1.008-1.274-3.608-4.733-3.608-6.514A4,4,0,0,1,244.5,267.9Z" fill="none" stroke="#f7b64f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Oval_14" data-name="Oval 14" d="M244.5,273.4a1.5,1.5,0,1,0-1.5-1.5A1.5,1.5,0,0,0,244.5,273.4Z" fill="none" stroke="#f7b64f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

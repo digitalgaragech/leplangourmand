@@ -1,0 +1,145 @@
+
+.darkbg{
+    .wpem-event-listings .wpem-event-layout-wrapper .wpem-event-infomation .wpem-event-details{
+        padding: 0;
+    }
+    .wpem-event-listing-list-view.wpem-event-listings .wpem-event-layout-wrapper .event_listing,
+    .wpem-event-listings .wpem-event-layout-wrapper,
+    .wpem-event-listing-list-view .wpem-event-box-col:last-of-type .wpem-event-layout-wrapper{
+        border: 0;
+    }
+    .wpem-event-listings.wpem-event-listing-box-view .wpem-event-layout-wrapper .wpem-event-infomation .wpem-event-date,
+    .wpem-event-listings .wpem-event-layout-wrapper .wpem-event-infomation .wpem-event-date{
+        display: none; 
+    }
+
+    .wpem-event-listing-list-view.wpem-event-listings .wpem-event-layout-wrapper .event_listing{
+        padding: 0;
+    }
+    #event-listing-view > .wpem-event-date:first-child{
+        display: block;
+        margin: 0 0 25px;
+    }
+    h3.wpem-heading-text,
+    h2{
+        font-size: 30px !important;
+        line-height: 30px !important;
+        @media (min-width: 1200px) {
+            font-size: 60px !important;
+            line-height: 60px !important;
+        }
+        margin: 0 !important;
+        padding: 10px 0;
+    }
+    .wpem-event-date,
+    .wpem-event-date-time,
+    .wpem-event-location,
+    h3.wpem-heading-text{
+        color: $color__white !important;
+    }
+    .wpem-alert-danger {
+        color:$color__white;
+        background-color: transparent;
+    }
+    .wpem-event-date-time,
+    .wpem-event-location,
+    .wpem-event-link{
+        float: left;
+        width: auto !important;  
+        margin: 5px;
+        min-height: 22px;
+    }
+    .wpem-event-title{
+        margin: 0 5px !important;
+    }
+    .wpem-event-listings .wpem-event-layout-wrapper .wpem-event-infomation .wpem-event-details .wpem-event-location::before {
+        content: "";
+        }
+        .wpem-event-listings .wpem-event-layout-wrapper .wpem-event-infomation .wpem-event-details .wpem-event-location .wpem-event-location-text a::before {
+            content: "\e947";
+            font-family: wp-event-manager;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 15px;
+            transition: top .4s;
+        }
+        .wpem-event-listings .wpem-event-layout-wrapper .wpem-event-infomation .wpem-event-details .wpem-event-location .wpem-event-location-text a:hover::before {
+            top: -2px;
+            }
+
+    .wpem-alert {
+        position: relative;
+        padding: 0;
+        margin: 0; 
+        border: 0;
+        border-radius: 0;
+    }
+    .no_event_listings_found{
+        margin-top: 15px;
+    }
+
+    .wpem-main h3 a, .wpem-alert h3 a{
+        color:$color__white !important;
+        &:hover{
+            color: $color__link !important;
+            }
+        }
+    }
+    #event_filters{
+        display: none;
+    }
+
+    .wpem-alert a{
+        background: transparent;
+        font-size: inherit;
+        line-height: inherit;
+        color: $color__link !important;
+        padding: 0;
+        border-radius: 0;
+        display: inline-block;
+        transition:none;
+    }
+    .wpem-main a, .wpem-main a, .wpem-main a,
+    .wpem-alert a{
+        color: $color__link !important;
+    }
+    .wpem-event-listing-list-view.wpem-event-listings .wpem-event-layout-wrapper .event_listing,
+    .wpem-event-listing-list-view.wpem-event-listings .wpem-event-layout-wrapper:hover .event_listing {
+    border-width: 1px;
+    }
+
+.wpem-event-listings.wpem-event-listing-box-view .wpem-event-layout-wrapper .wpem-event-banner .wpem-event-banner-img{
+    display: none;
+}
+.wpem-event-listings.wpem-event-listing-box-view .wpem-event-layout-wrapper .wpem-event-infomation .wpem-event-date,
+.wpem-event-listings .wpem-event-layout-wrapper .wpem-event-infomation .wpem-event-date {
+    display: block;
+}
+.wpem-event-date {
+    display: none;
+}
+
+.wpem-event-listings.wpem-event-listing-box-view  .wpem-event-layout-wrapper .wpem-event-infomation .wpem-event-date {
+    width: 100%;
+    position: static;
+    padding: 15px;
+    left: 0;
+    top: 0;
+  }
+.past_event_listings .wpem-event-action-url {
+    pointer-events: none;
+    cursor: default;
+  }
+  .wpem-event-banner{
+      padding: 0 !important;
+      display: none;
+  }
+.single_event_listing{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.event_registration.registration{
+    display: none;
+}

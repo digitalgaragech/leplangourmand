@@ -1,0 +1,27 @@
+@font-face {
+    font-family: brush;
+    src: url("fonts/brush.otf") format("opentype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-size: 1rem;
+	line-height: $font__line-height-body;
+}
+p{
+	line-height: 2;
+}
+@import "headings";
+@import "copy";
+
+
+.darkbg{
+	color: $color__white;
+}

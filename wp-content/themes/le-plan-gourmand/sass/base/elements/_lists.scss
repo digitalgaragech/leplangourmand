@@ -1,0 +1,75 @@
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+.pricelist,
+.pricelist .wp-block-group__inner-container{
+		> p{
+			position: relative;
+			em{
+				@media (min-width:998px){
+				position: absolute;
+				left: 0;
+				width: 70%;
+				text-align: right;
+				&::before{
+					content: '';
+					display: block;
+					background-image: linear-gradient(to right, #333 10%, rgba(255, 255, 255, 0) 10%);
+					background-position: bottom;
+					background-size: 10px 1px;
+					background-repeat: repeat-x;
+					height: 1px;
+					position: relative;
+					top: 20px;
+					width: 62%;
+					right: -32%;
+					z-index: 0;
+				}
+			}
+		}
+	}
+}
+.pricelist .wp-block-group__inner-container{
+	> p{
+		em{
+			width: 100%;
+			@media (min-width:998px){
+				width: 90%;
+			}
+			&::before{
+				width: 62%;
+				right: -32%;
+			}
+		}
+	}
+
+}
+.dotted-gradient {
+	background-image: linear-gradient(to right, #333 40%, rgba(255, 255, 255, 0) 20%);
+	background-position: top;
+	background-size: 10px 1px;
+	background-repeat: repeat-x;
+} 

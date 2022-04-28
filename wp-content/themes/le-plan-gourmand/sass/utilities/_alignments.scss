@@ -1,0 +1,53 @@
+.alignleft {
+
+	/*rtl:ignore*/
+	float: left;
+
+	/*rtl:ignore*/
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.alignright {
+
+	/*rtl:ignore*/
+	float: right;
+
+	/*rtl:ignore*/
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+
+	@include center-block;
+
+	margin-bottom: 1.5em;
+}
+.center-v{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.m-t-10{
+	margin-top: 10px;
+}
+.m-t-20{
+	margin-top: 20px;
+}
+.m-t-30{
+	margin-top: 30px;
+}
+@media screen and (min-width: 1440px) {
+	.p-r-100-inside > *,
+	.p-r-100 {
+		padding-right: 100px; 
+	} 
+	.m-t--70{
+		margin-top: -70px;
+	}
+	.m-t--140{
+		margin-top: -140px;
+	}
+}

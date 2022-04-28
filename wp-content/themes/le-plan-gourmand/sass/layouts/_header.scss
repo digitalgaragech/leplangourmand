@@ -1,0 +1,51 @@
+.site-header{
+    display: grid;
+	@media (max-width: 997px) {
+        grid-template-areas:"branding" "navigation";
+    }
+	@media (min-width: 998px) {
+        grid-template-columns: 1fr 200px 1fr;
+    }
+	@media (min-width: 1440px) {
+        grid-template-columns: 1fr 400px 1fr;
+    }
+    padding:15px 0 30px;
+}
+#site-navigation{
+	@media (max-width: 997px) {
+        grid-area: navigation;
+        #left-menu{
+            justify-content: center;
+        }
+    }
+}
+.site-branding{
+    text-align: center;
+	@media (max-width: 767px) {
+        text-align: left;
+        margin: 20px 0 0 30px;
+    }
+	@media (max-width: 997px) {
+        grid-area: branding;
+    }
+    h1,p{
+        position: absolute;
+        top:-100px;
+    }
+    img{  
+        @media (max-width: 997px) {
+            height: 100px;
+            width: auto;
+        }
+    }
+}
+.entry-header{
+	background-color: $color__black;
+}
+.entry-title{
+	margin: 0 auto;
+	width: 100%;
+	@media screen and (min-width: 1440px) {
+		width: 1440px;
+	}
+}

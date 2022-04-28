@@ -1,0 +1,18 @@
+footer.site-footer{
+    background-color: $color__background-footer;
+    color:$color__white;
+    h2{
+        visibility: hidden;
+    }
+    .widget-area{
+        margin: 0 auto;
+        width: 90%;
+        @media screen and (min-width: 1440px) {
+            width: 1340px;
+        }
+        display: grid;
+        @media screen and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+
+header.entry-header{
+    display: none;
+}
+.home{ 
+    .wp-block-columns:last-child{
+        .wp-block-image{  
+            bottom: -40px;
+            position: relative;
+        }
+        .wp-block-column:nth-child(1){  
+            margin-top: 50px;
+            padding-bottom:50px;
+            h2{
+                margin: 5px 0 20px 0 !important;
+            }
+        }
+        @media (max-width: 599px) {
+            .wp-block-column:nth-child(1){  
+                margin-top: 50px;
+                order:2;
+            }
+            .wp-block-column:nth-child(2){
+                order:1
+
+            }
+        }
+    }
+}

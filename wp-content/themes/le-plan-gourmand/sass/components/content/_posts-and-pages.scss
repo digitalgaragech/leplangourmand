@@ -1,0 +1,210 @@
+.page-id-89,
+.page-id-123 {
+	header.entry-header{
+   		display: none;
+	}
+}
+
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.darkbg{
+	position:relative;
+	&::after{
+		background-color: $color__black;
+		content: '';
+		display: block;
+		height: 100%;
+		top: 0;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0; 
+		right: 0;
+		z-index: -1;
+		@media screen and (min-width: 1440px) {
+			height: calc(100% - 120px);
+			top: 40px;
+		}
+	}
+	.wp-block-group__inner-container{
+		margin: 0 auto;
+		width: 90%;
+		@media screen and (min-width: 1440px) {
+			width: 1340px;
+		}
+	}
+}
+.contained{
+	margin: 0 auto;
+	width: 90%;
+	@media screen and (min-width: 1440px) {
+		margin: 50px auto 100px;
+		width: 1340px;
+	}
+}
+.small-contained{
+	margin: 50px auto 100px;
+	width: 90%;
+	@media screen and (min-width: 1000px) {
+		width: 60%;
+	}
+}
+@media screen and (min-width: 768px) {
+.pspacer{
+	margin-bottom: 1.5em;
+	margin-right: 6rem;
+	margin-top: 3rem;
+}
+}
+.bloc-jaune{
+	background-color: $color__link;
+	color: $color__text-main;
+	padding: 50px;
+	h1,h2,h3{
+		margin: 0;
+	}
+}
+.bloc-clair{
+	background-color: $color__background-screen;
+	color: $color__text-main;
+	padding: 50px;
+}
+.btn-contact a,
+a.btn-contact{
+	border-radius: 10px;
+	background-color: rgba($color: $color__link, $alpha: 0.8);
+	color: $color__black;
+	transition: all ease 1s;
+	&:hover{
+		background-color: rgba($color: $color__link, $alpha: 1);
+		color: $color__black;
+	}
+}
+.btn-tel a,
+a.btn-tel{
+	border-radius: 10px;
+	background-color: rgba($color: $color__white, $alpha: 0.5);
+	color: $color__black;
+	transition: all ease 1s;
+	&:hover{
+		background-color: rgba($color: $color__white, $alpha: 0.9);
+		color: $color__black;
+	}
+}
+.wpem-event-listing-header-title{
+	visibility: hidden;
+}
+.socialicons{
+	.wp-block-image{
+		float: left;
+		margin-right: 20px;
+	}
+} 
+.adrs{
+	.wp-block-group__inner-container{
+		padding: 10px 0;
+	}
+	p{
+		margin: 10px 0;
+	}
+}
+.adresse-icon,
+.email-icon,
+.tel-icon{
+	padding-left: 30px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	position: relative;
+	&:before{
+		content: '';
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: top .4s, filter  .4s;
+		background-position: right;
+	}
+	&:hover,
+	&:visited{
+		&:before{
+		filter: hue-rotate(-25deg) saturate(300%);
+		}
+	}
+}
+
+.adresse-icon{
+	&:before{
+		background-image: url("images/maps-pin-1.svg");
+	}
+}
+.email-icon{
+	&:before{
+		background-image: url("images/send-email.svg");
+	}
+}
+.tel-icon{
+	&:before{
+		background-image: url("images/mobile-phone.svg");
+	}
+}
+.food-truck-box{
+	h3,p{
+		margin: 0;
+	}
+	p{
+		margin-bottom: 20px;
+	}
+}
+.owl-carousel {
+    position: relative;
+}
+.owl-next, .owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.owl-next {
+    right: 0;
+    display: flex;
+}
+.owl-prev{
+    left: 0;
+    display: flex;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+	font-size: 80px !important;
+	height: 70%;
+	margin: 0;
+	width: 60px;
+	opacity: 0.5;
+	&:hover{
+		background-color: transparent;
+		opacity: 1;
+	}
+}

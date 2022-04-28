@@ -1,0 +1,44 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, 0.8);
+	line-height: 1;
+	padding: 0.6em 1em 0.4em;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}
+.btn-tel a,
+a.btn-tel{
+	border-radius: 10px;
+	background-color: rgba($color: $color__white, $alpha: 0.5);
+	color: $color__black;
+	transition: all ease 1s;
+	&:hover{
+		background-color: rgba($color: $color__white, $alpha: 0.9);
+		color: $color__black;
+	}
+	&::before{
+		content: '';
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		top: 5px;
+		position: relative;
+		transition: top .4s, filter  .4s;
+		background-image: url("images/icon-tel.svg");
+	}
+}
