@@ -20,6 +20,15 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="/wp-content/themes/le-plan-gourmand/css/owl.carousel.min.css" media="all">
 	<link rel="stylesheet" href="/wp-content/themes/le-plan-gourmand/css/owl.theme.default.min.css" media="all">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BPPDWQKK2B"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-BPPDWQKK2B');
+	</script>
 </head>
 
 <body <?php body_class(); ?>>

@@ -26,50 +26,67 @@ dd {
 }
 .pricelist,
 .pricelist .wp-block-group__inner-container{
+	@media (min-width:998px){
+	strong {
+		  padding: 10px 10px 10px 0;
+		  background-color: #fff;
+		  z-index: 20;
+		  position: relative;
+
+			&::before{
+				content: '';
+				display: block;
+				background-image: linear-gradient(to right, #333 10%, rgba(255, 255, 255, 0) 10%);
+				background-position: bottom;
+				background-size: 10px 1px;
+				background-repeat: repeat-x;
+				height: 1px;
+				position: relative;
+				top: 20px;
+				width: 65%;
+				right: 0;
+				z-index: 0;
+			}
+		}
 		> p{
 			position: relative;
+			
 			em{
-				@media (min-width:998px){
-				position: absolute;
-				left: 0;
-				width: 70%;
-				text-align: right;
-				&::before{
-					content: '';
-					display: block;
-					background-image: linear-gradient(to right, #333 10%, rgba(255, 255, 255, 0) 10%);
-					background-position: bottom;
-					background-size: 10px 1px;
-					background-repeat: repeat-x;
-					height: 1px;
-					position: relative;
-					top: 20px;
-					width: 62%;
-					right: -32%;
-					z-index: 0;
-				}
-			}
-		}
-	}
-}
-.pricelist .wp-block-group__inner-container{
-	> p{
-		em{
-			width: 100%;
-			@media (min-width:998px){
-				width: 90%;
-			}
-			&::before{
-				width: 62%;
-				right: -32%;
-			}
-		}
-	}
+			  padding: 10px 0 10px 10px;
+			  background-color: #fff;
+			  position: absolute;
+			  right: 30%;
+			  margin-top: -11px;
+			  text-align: right; 
+			  z-index: 100;
 
+			}
+		}
+	}
 }
+
+.pricelist.pricelist-full .wp-block-group__inner-container{
+	@media (min-width:998px){
+	strong {
+		padding: 10px 10px 10px 0;
+		background-color: #fff;
+		z-index: 20;
+		position: relative;
+		&::before{
+			width: 95%;
+		}
+	}
+	> p{
+			em{
+			right: 0;
+			}
+		}
+	}
+}
+
 .dotted-gradient {
 	background-image: linear-gradient(to right, #333 40%, rgba(255, 255, 255, 0) 20%);
 	background-position: top;
 	background-size: 10px 1px;
 	background-repeat: repeat-x;
-} 
+}

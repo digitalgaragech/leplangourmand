@@ -15,4 +15,15 @@ footer.site-footer{
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
+    .paiementicons img{
+        max-height:34px
+    }
+    .paiementicons .wp-block-image{
+        float:left;
+        background-color: white !important;
+    padding: 10px;
+    }
+    .paimenttitle{
+        margin-bottom:0
+    }
 }

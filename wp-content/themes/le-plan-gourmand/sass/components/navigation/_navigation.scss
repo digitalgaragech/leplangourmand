@@ -162,13 +162,19 @@
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
-.main-navigation.toggled ul {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	@media screen and (min-width: 768px) {
-		justify-content:flex-start;
-		flex-direction:row;
+.main-navigation.toggled{
+	height: 100vh;
+	z-index: 6;
+	position: absolute;
+	background-color: #fff;
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		@media screen and (min-width: 768px) {
+			justify-content:flex-start;
+			flex-direction:row;
+		}
 	}
 }
 .menu-menu-gauche-container{

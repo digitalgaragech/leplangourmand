@@ -143,3 +143,27 @@
 .event_registration.registration{
     display: none;
 }
+.type_title{
+    display:none;
+}
+#primary h2.wpem-heading-text{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wpem-row{
+    align-items: center;
+}
+.page-id-56 #event-listing-view{
+    margin-bottom: 100px;
+}
+.wpem-to-date,
+.wpem-event-type{
+    display: none !important;
+}
+.wpem-alert a:hover{
+    background-color: transparent;
+}
+.wpem-event-listings-header .wpem-event-layout-action-wrapper .wpem-event-layout-action .wpem-event-layout-icon.wpem-active-layout{
+    background-color: $color__link !important;
+}

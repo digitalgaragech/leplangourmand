@@ -62,3 +62,10 @@ jQuery(document).ready(function(){
 	jQuery(".wp-block-image").addClass('item');
 	setTimeout(owl, 100);
 });
+const typeTitles = document.querySelectorAll(".type_title");
+for (let i = 0; i < typeTitles.length; i++) {
+  typeTitles[i].nextElementSibling.querySelector('h2').textContent = typeTitles[i].innerText;
+}
+
+
+
